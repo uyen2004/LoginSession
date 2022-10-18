@@ -20,7 +20,6 @@ public class LoginPage extends HttpServlet {
             HttpSession httpSession = req.getSession();
             httpSession.setAttribute("isLogin", true);
             httpSession.setMaxInactiveInterval(5*60);
-
         }
         req.getRequestDispatcher("/webapp/login.html").forward(req, resp);
     }
